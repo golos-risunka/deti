@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Яна Нуриева — История</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body class="paper-bg">
+    <main class="story-page">
+      <div class="container">
+        <a class="back-link" href="../index.html">← назад к историям</a>
+
+        <div class="story-layout">
+          <div class="story-image">
+            <img src="../img/kartinki/4.jpg" alt="Рисунок Яны" />
+          </div>
+
+          <div>
+            <h1 style="font-size: clamp(1.8rem, 4vw, 3rem); margin-bottom: 10px;">Яна Нуриева</h1>
+            <p class="quote">"Счастливая семья"</p>
+
+            <button class="btn audio-btn" data-audio-toggle="audio-yana">
+              <span data-icon>▶</span>
+              <span data-label>СЛУШАТЬ ИСТОРИЮ</span>
+              <span class="wave" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+            </button>
+            <audio id="audio-yana" preload="none">
+              <source src="../zvuk/4.m4a" type="audio/mp4" />
+            </audio>
+
+            <p class="story-text">
+              Я представила что мы дома смотрим телик, а мама с папой они вместе пошли в
+              магазин, и что они никогда не ссорились, и что они пришли и мы обрадовались.
+            </p>
+
+            <section style="padding: 34px 0 0;">
+              <h3 style="margin-bottom: 10px;">Если эта история вас тронула, вы можете помочь</h3>
+              <a class="btn" href="#">Поддержать</a>
+            </section>
+
+            <div class="nav-links">
+              <a href="./Egorova-Maria.html">← Предыдущая</a>
+              <a href="./Doronin-Nikolay.html">Следующая →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="../app.js"></script>
+  </body>
+</html>
