@@ -65,9 +65,10 @@ if (balloons.length) {
   window.addEventListener("scroll", moveBalloons, { passive: true });
 }
 
-const revealTargets = document.querySelectorAll(
-  "main section, footer, .story-card, .timeline-item, .partner-card, .step, .info-card"
-);
+/* Анимация только целых секций: карточки историй и др. не отдельно — иначе на
+   мобильных Safari IntersectionObserver часто не даёт им .is-visible, и блок
+   остаётся с opacity: 0 при сохранении высоты макета. */
+const revealTargets = document.querySelectorAll("main section, footer");
 
 if (revealTargets.length) {
   const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;

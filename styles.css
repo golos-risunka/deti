@@ -71,6 +71,17 @@ section {
   transform: translateY(0);
 }
 
+/* На мобильных IntersectionObserver часто не успевает / не срабатывает для секций:
+   контент остаётся с opacity: 0 при сохранении высоты — блок «пустой». */
+@media (max-width: 768px) {
+  .reveal-on-scroll {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+    will-change: auto;
+  }
+}
+
 .site-header {
   position: fixed;
   top: 14px;
